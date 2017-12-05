@@ -44,4 +44,12 @@ public class dbConnect {
         return dbstmt;
     }
 
+    public void closeDB(){
+            try{
+                conn.close();
+            }catch(SQLException ee){
+
+            }
+    }
+
 }
